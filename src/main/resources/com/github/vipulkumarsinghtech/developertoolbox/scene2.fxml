@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="This is Scene 2" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+        <Label text="Welcome to Scene 2!"/>
+    </children>
+</VBox>

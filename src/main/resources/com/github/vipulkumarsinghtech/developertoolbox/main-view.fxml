@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.github.vipulkumarsinghtech.developertoolbox.MainController"
+            fx:id="rootPane">
+
+    <top>
+        <MenuBar>
+            <Menu text="Tools">
+                <MenuItem text="Scene 1" onAction="#loadScene1"/>
+                <MenuItem text="Scene 2" onAction="#loadScene2"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="Exit" onAction="#exitApplication"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <VBox fx:id="contentPane">
+            <!-- Add your content here -->
+        </VBox>
+    </center>
+</BorderPane>
