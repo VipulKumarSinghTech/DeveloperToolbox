@@ -12,11 +12,11 @@ public class MainController {
     private VBox contentPane;
 
     public void loadScene1() {
-        loadScene("scene1.fxml", "Scene 1");
+        loadScene("scene1.fxml", "scene1.css");
     }
 
     public void loadScene2() {
-        loadScene("scene2.fxml", "Scene 2");
+        loadScene("scene2.fxml", "scene2.css");
     }
 
     public void exitApplication() {
@@ -24,12 +24,16 @@ public class MainController {
         stage.close();
     }
 
-    private void loadScene(String fxmlFileName, String title) {
+    private void loadScene(String fxmlFileName, String cssFileName) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
             Parent scene = loader.load();
+
+            String css = this.getClass().getResource(cssFileName).toExternalForm();
+            scene.getStylesheets().add(css);
+
             Stage stage = (Stage) contentPane.getScene().getWindow();
-            stage.setTitle(title);
+            stage.setMaximized(true);
             contentPane.getChildren().setAll(scene);
         } catch (Exception e) {
             e.printStackTrace();
