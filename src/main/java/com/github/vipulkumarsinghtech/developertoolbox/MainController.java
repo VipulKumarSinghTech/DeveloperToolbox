@@ -19,10 +19,10 @@ public class MainController {
         loadScene("scene2.fxml", "scene2.css");
     }
 
-    //public void exitApplication() {
-       // Stage stage = (Stage) contentPane.getScene().getWindow();
-        //stage.close();
-   // }
+    public void exitApplication() {
+        Stage stage = (Stage) contentPane.getScene().getWindow();
+        stage.close();
+    }
 
     private void loadScene(String fxmlFileName, String cssFileName) {
         try {
