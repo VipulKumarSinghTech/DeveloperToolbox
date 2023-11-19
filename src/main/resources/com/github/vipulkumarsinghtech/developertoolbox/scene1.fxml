@@ -7,7 +7,14 @@
 
 <VBox alignment="CENTER" spacing="10" stylesheets="@scene1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.Base64Controller">
     <Label text="Enter text to encode to Base64:" />
-    <TextArea fx:id="inputTextArea" styleClass="encodeTextArea" promptText="Enter your text" />
-    <Button onAction="#encodeToBase64" styleClass="encodeButton" text="Encode to Base64" />
-    <Label fx:id="resultLabel" />
+    <TextArea fx:id="encodeTextArea" styleClass="encodeTextArea" promptText="Enter your text" />
+    <Button onAction="#encodeToBase64" styleClass="encodeButton" text="Encode" />
+    <Button onAction="#copyEncodedResult" styleClass="encodeButton" text="Copy Result" />
+    <Label fx:id="encodeResult" />
+
+    <Label text="Enter text to decode from Base64:" />
+    <TextArea fx:id="decodeTextArea" styleClass="decodeTextArea" promptText="Enter your text" />
+    <Button onAction="#decodeToBase64" styleClass="decodeButton" text="Decode" />
+    <Button onAction="#copyDecodedResult" styleClass="decodeButton" text="Copy Result" />
+    <Label fx:id="decodeResult" />
 </VBox>
