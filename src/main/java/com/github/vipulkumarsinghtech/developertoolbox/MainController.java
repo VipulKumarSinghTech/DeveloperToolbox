@@ -12,7 +12,7 @@ public class MainController {
     private VBox contentPane;
 
     public void loadScene1() {
-        loadScene("scene1.fxml", "scene1.css");
+        loadScene("base64-view.fxml", "base64-view.css");
     }
 
     public void loadScene2() {

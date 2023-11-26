@@ -11,7 +11,7 @@
     <top>
         <MenuBar>
             <Menu text="Tools">
-                <MenuItem text="Scene 1" onAction="#loadScene1"/>
+                <MenuItem text="Base 64 Conversion" onAction="#loadScene1"/>
                 <MenuItem text="Scene 2" onAction="#loadScene2"/>
             </Menu>
             <Menu text="Help">

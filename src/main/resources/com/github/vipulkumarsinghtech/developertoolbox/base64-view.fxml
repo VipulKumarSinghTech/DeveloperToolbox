@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="10" stylesheets="@scene1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.Base64Controller">
+<VBox alignment="CENTER" spacing="10" stylesheets="@base64-view.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.Base64Controller">
     <Label text="Enter text to encode to Base64:" />
     <TextArea fx:id="encodeTextArea" styleClass="encodeTextArea" promptText="Enter your text" />
     <Button onAction="#encodeToBase64" styleClass="encodeButton" text="Encode" />
