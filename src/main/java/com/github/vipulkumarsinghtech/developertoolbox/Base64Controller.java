@@ -1,5 +1,6 @@
 package com.github.vipulkumarsinghtech.developertoolbox;
 
+import com.github.vipulkumarsinghtech.developertoolbox.utils.ApplicationUtils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -42,18 +43,12 @@ public class Base64Controller {
 
     @FXML
     private void copyEncodedResult() {
-        copyResult(encodeResult.getText().replace(RESULT, ""));
+        ApplicationUtils.copyToClipboard(encodeResult.getText().replace(RESULT, ""));
     }
 
     @FXML
     private void copyDecodedResult() {
-        copyResult(decodeResult.getText().replace(RESULT, ""));
+        ApplicationUtils.copyToClipboard(decodeResult.getText().replace(RESULT, ""));
     }
 
-    private void copyResult(String result) {
-        Clipboard clipboard = Clipboard.getSystemClipboard();
-        ClipboardContent content = new ClipboardContent();
-        content.putString(result);
-        clipboard.setContent(content);
-    }
 }

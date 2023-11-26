@@ -16,7 +16,7 @@ public class MainController {
     }
 
     public void loadScene2() {
-        loadScene("scene2.fxml", "scene2.css");
+        loadScene("epoch-view.fxml", "epoch-view.css");
     }
 
     public void exitApplication() {

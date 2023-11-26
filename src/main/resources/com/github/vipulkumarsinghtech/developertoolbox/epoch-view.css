@@ -1,0 +1,9 @@
+.convertToDateTime {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+.epochTime {
+    -fx-padding: 0 10 0 10;
+    -fx-max-height: 25px;
+}

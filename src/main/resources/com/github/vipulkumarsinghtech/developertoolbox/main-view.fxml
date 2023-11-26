@@ -12,7 +12,7 @@
         <MenuBar>
             <Menu text="Tools">
                 <MenuItem text="Base 64 Conversion" onAction="#loadScene1"/>
-                <MenuItem text="Scene 2" onAction="#loadScene2"/>
+                <MenuItem text="Epoch Conversion" onAction="#loadScene2"/>
             </Menu>
             <Menu text="Help">
                 <MenuItem text="Exit" onAction="#exitApplication"/>
