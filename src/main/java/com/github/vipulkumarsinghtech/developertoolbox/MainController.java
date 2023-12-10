@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class MainController {
 
     @FXML
@@ -19,6 +21,10 @@ public class MainController {
         loadScene("epoch-view.fxml", "epoch-view.css");
     }
 
+    public void loadScene3() {
+        loadScene("jwt-view.fxml", "jwt-view.css");
+    }
+
     public void exitApplication() {
         Stage stage = (Stage) contentPane.getScene().getWindow();
         stage.close();
@@ -29,7 +35,7 @@ public class MainController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
             Parent scene = loader.load();
 
-            String css = this.getClass().getResource(cssFileName).toExternalForm();
+            String css = Objects.requireNonNull(this.getClass().getResource(cssFileName)).toExternalForm();
             scene.getStylesheets().add(css);
 
             Stage stage = (Stage) contentPane.getScene().getWindow();

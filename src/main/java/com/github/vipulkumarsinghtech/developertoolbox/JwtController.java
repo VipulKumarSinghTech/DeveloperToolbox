@@ -1,39 +1,38 @@
 package com.github.vipulkumarsinghtech.developertoolbox;
 
-import com.github.vipulkumarsinghtech.developertoolbox.utils.ApplicationUtils;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
 import java.time.Instant;
+import java.util.Base64;
 import java.util.Date;
 
 public class JwtController {
 
     @FXML
-    private TextArea epochTime;
+    private TextArea token;
 
     @FXML
-    private Label dateTimeResult;
-
-    private static final String RESULT = "Result: ";
+    private TextArea header;
 
     @FXML
-    private void convertToDateTime() {
-        String inputText = epochTime.getText().trim();
-
-        if (inputText.isEmpty() || !(inputText.matches("\\d+"))) {
-            dateTimeResult.setText("Please enter a valid value");
-            return;
-        }
-
-        String result = Date.from(Instant.ofEpochMilli(Long.parseLong(inputText))).toString();
-        dateTimeResult.setText(RESULT + result);
-    }
+    private TextArea payload;
 
     @FXML
-    private void copyDateTime() {
-        ApplicationUtils.copyToClipboard(dateTimeResult.getText().replace(RESULT, ""));
+    private TextArea signature;
+
+    @FXML
+    private void decodeJwtToken() {
+        String inputText = token.getText().trim();
+        String[] chunks = inputText.split("\\.");
+
+        Base64.Decoder decoder = Base64.getUrlDecoder();
+
+        String headerChunk = new String(decoder.decode(chunks[0]));
+        String payloadChunk = new String(decoder.decode(chunks[1]));
+
+        header.setText(headerChunk);
+        payload.setText(payloadChunk);
     }
 
 }
