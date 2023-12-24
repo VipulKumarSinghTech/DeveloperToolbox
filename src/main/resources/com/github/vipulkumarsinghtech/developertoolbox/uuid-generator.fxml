@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="10" stylesheets="@epoch-view.css" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.JwtController">
+    <Label text="JWT token convertor:"/>
+    <TextArea fx:id="token" styleClass="token" promptText="Enter JWT token: "/>
+    <Button onAction="#decodeJwtToken" styleClass="buttonClass" text="Decode"/>
+    <Label text="Header: Algorithm and Token Type"/>
+    <TextArea fx:id="header" styleClass="header" promptText="Header: Algorithm and Token Type"/>
+    <Label text="Payload: Data"/>
+    <TextArea fx:id="payload" styleClass="payload"  promptText="Payload: Data"/>
+    <Label text="Signature"/>
+    <TextArea fx:id="signature" styleClass="signature"  promptText="Signature"/>
+</VBox>
