@@ -25,6 +25,10 @@ public class MainController {
         loadScene("jwt-view.fxml", "jwt-view.css");
     }
 
+    public void loadScene4() {
+        loadScene("uuid-generator.fxml", "uuid-generator.css");
+    }
+
     public void exitApplication() {
         Stage stage = (Stage) contentPane.getScene().getWindow();
         stage.close();
