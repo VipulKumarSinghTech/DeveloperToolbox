@@ -24,6 +24,10 @@ public class JwtController {
     @FXML
     private void decodeJwtToken() {
         String inputText = token.getText().trim();
+
+        if(inputText.isEmpty())
+            return;
+
         String[] chunks = inputText.split("\\.");
 
         Base64.Decoder decoder = Base64.getUrlDecoder();
