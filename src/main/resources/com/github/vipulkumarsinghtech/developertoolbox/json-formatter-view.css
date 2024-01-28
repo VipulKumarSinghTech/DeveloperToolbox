@@ -1,0 +1,14 @@
+.formatJson {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+.rawJson {
+    -fx-padding: 0 10 0 10;
+    -fx-max-height: 100px;
+}
+
+.prettyJson {
+    -fx-padding: 0 10 0 10;
+    -fx-max-height: 50px;
+}
