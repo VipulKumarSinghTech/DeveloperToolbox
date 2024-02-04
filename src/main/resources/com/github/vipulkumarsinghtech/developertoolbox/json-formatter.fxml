@@ -2,8 +2,8 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
-<VBox alignment="CENTER" spacing="10" stylesheets="@json-formatter-view.css" xmlns="http://javafx.com/javafx/21"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.JwtController">
+<VBox alignment="CENTER" spacing="10" stylesheets="@json-formatter.css" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.vipulkumarsinghtech.developertoolbox.JsonFormatController">
     <Label text="Enter JSON text:"/>
     <TextArea fx:id="rawJson" styleClass="rawJson" promptText="Enter JSON text: "/>
     <Button onAction="#formatJson" styleClass="formatJson" text="Format"/>

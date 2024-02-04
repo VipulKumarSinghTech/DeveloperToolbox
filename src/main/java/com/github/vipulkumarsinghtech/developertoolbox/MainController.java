@@ -29,6 +29,10 @@ public class MainController {
         loadScene("uuid-generator.fxml", "uuid-generator.css");
     }
 
+    public void loadScene5() {
+        loadScene("json-formatter.fxml", "json-formatter.css");
+    }
+
     public void exitApplication() {
         Stage stage = (Stage) contentPane.getScene().getWindow();
         stage.close();

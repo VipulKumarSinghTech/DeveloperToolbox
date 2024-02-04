@@ -15,6 +15,7 @@
                 <MenuItem text="Epoch Conversion" onAction="#loadScene2"/>
                 <MenuItem text="JWT Decoder" onAction="#loadScene3"/>
                 <MenuItem text="UUID Generator" onAction="#loadScene4"/>
+                <MenuItem text="JSON Formatter" onAction="#loadScene5"/>
             </Menu>
             <Menu text="Help">
                 <MenuItem text="Exit" onAction="#exitApplication"/>

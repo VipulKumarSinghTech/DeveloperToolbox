@@ -7,6 +7,7 @@ module com.github.vipulkumarsinghtech.developertoolbox {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires com.google.gson;
 
     opens com.github.vipulkumarsinghtech.developertoolbox to javafx.fxml;
     exports com.github.vipulkumarsinghtech.developertoolbox;
