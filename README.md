@@ -51,4 +51,4 @@ We welcome contributions from the community to enhance Developer Toolbox further
 
 ## License
 
-This project is licensed under the MIT License. Feel free to modify and distribute it as per the terms of the license.
+This project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute it as per the terms of the license.
